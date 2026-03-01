@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay Parmar | Senior Full Stack Developer</title>
+
+<style>
+:root {
+  --primary: #2563eb;
+  --dark: #0f172a;
+  --gray: #64748b;
+  --light: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--dark);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-weight: 400;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--primary);
+  padding-left: 10px;
+}
+
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline {
+  border-left: 3px solid var(--primary);
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+  header h1 { font-size: 28px; }
+  section { padding: 40px 5%; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Jay Parmar</h1>
+  <h2>Senior Full Stack Developer</h2>
+  <p>PHP • Laravel • CakePHP • Vue.js • React • MySQL • Redis</p>
+  <a href="mailto:jayparmar271@gmail.com" class="btn">Contact Me</a>
+</header>
+
+<section>
+  <h3>About Me</h3>
+  <p>
+    Senior Software Engineer based in Ahmedabad, India with 8+ years of experience 
+    building scalable web applications and backend systems. 
+    Specialized in PHP ecosystems, Vue.js, and modern API-driven architecture.
+  </p>
+  <br>
+  <p>
+    Experienced in debugging production systems, implementing secure APIs, 
+    integrating Stripe, Xero, Google OAuth2, and building webhook-based architectures.
+    Passionate about clean code, mentoring juniors, and optimizing development workflows.
+  </p>
+</section>
+
+<section>
+  <h3>Technical Skills</h3>
+  <div class="skills-grid">
+    <div class="card">
+      <h4>Backend</h4>
+      <p>PHP, Laravel, CakePHP</p>
+      <p>REST APIs, JWT</p>
+    </div>
+
+    <div class="card">
+      <h4>Frontend</h4>
+      <p>Vue.js, React.js, Next.js</p>
+      <p>TypeScript, JQuery</p>
+    </div>
+
+    <div class="card">
+      <h4>Database</h4>
+      <p>MySQL, PostgreSQL</p>
+      <p>Redis</p>
+    </div>
+
+    <div class="card">
+      <h4>Dev Tools</h4>
+      <p>Docker, Git, JIRA</p>
+      <p>Claude Code, Agile</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Professional Experience</h3>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h4>Senior Software Engineer – Eventrac (2023 – Present)</h4>
+      <p>UK-based sports event registration & management platform.</p>
+      <ul>
+        <li>Built scalable event registration pipeline</li>
+        <li>Implemented webhook integrations</li>
+        <li>Debugged production issues & improved performance</li>
+        <li>Maintained Redis-based optimizations</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h4>Senior Software Engineer – Proofed (2019 – 2023)</h4>
+      <ul>
+        <li>Created custom file conversion plugin</li>
+        <li>Developed business APIs & JWT authentication</li>
+        <li>Stripe, Xero & Google OAuth integration</li>
+        <li>Managed deployments & client communication</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h4>Proofed B2B – React / Next.js (2022 – 2023)</h4>
+      <ul>
+        <li>Built order & job management modules</li>
+        <li>Developed scalable frontend architecture</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h3>Key Projects</h3>
+  <div class="projects-grid">
+
+    <div class="card">
+      <h4>Eventrac</h4>
+      <p>Sports event registration, booking & marketing system with full lifecycle management.</p>
+    </div>
+
+    <div class="card">
+      <h4>Connect In</h4>
+      <p>Social media platform with posts, groups, likes, comments & media sharing.</p>
+    </div>
+
+    <div class="card">
+      <h4>WatfordTaxi</h4>
+      <p>Taxi booking platform with dynamic admin dashboard & configuration system.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h3>Contact</h3>
+  <p>Email: jayparmar271@gmail.com</p>
+  <p>Phone: +91 7405873827</p>
+  <p>Location: Ahmedabad, India</p>
+  <p>GitHub: github.com/yourusername</p>
+  <p>LinkedIn: linkedin.com/in/yourusername</p>
+</section>
+
+<footer>
+  <p>© 2026 Jay Parmar | Senior Full Stack Developer</p>
+</footer>
+
+</body>
+</html>
