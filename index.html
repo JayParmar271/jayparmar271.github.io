@@ -9,15 +9,15 @@
 :root {
   --primary: #2563eb;
   --dark: #0f172a;
+  --light: #f1f5f9;
   --gray: #64748b;
-  --light: #f8fafc;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
@@ -27,14 +27,14 @@ body {
 }
 
 header {
-  background: var(--dark);
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
@@ -44,14 +44,19 @@ header h2 {
   margin-bottom: 20px;
 }
 
+header p {
+  margin-bottom: 20px;
+  color: #94a3b8;
+}
+
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  margin: 10px;
+  padding: 10px 22px;
+  margin: 8px;
   background: var(--primary);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: 0.3s;
 }
 
@@ -60,32 +65,33 @@ header h2 {
 }
 
 section {
-  padding: 60px 10%;
+  padding: 70px 10%;
 }
 
 h3 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border-left: 4px solid var(--primary);
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
-.skills-grid, .projects-grid {
+.skills-grid,
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .timeline {
@@ -97,6 +103,15 @@ h3 {
   margin-bottom: 30px;
 }
 
+ul {
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+.contact p {
+  margin-bottom: 8px;
+}
+
 footer {
   background: var(--dark);
   color: white;
@@ -104,13 +119,18 @@ footer {
   padding: 30px;
 }
 
-.contact p {
-  margin-bottom: 10px;
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media(max-width:768px){
-  header h1 { font-size: 28px; }
-  section { padding: 40px 5%; }
+  header h1 { font-size: 30px; }
+  section { padding: 50px 5%; }
 }
 </style>
 </head>
@@ -122,30 +142,33 @@ footer {
   <h2>Senior Full Stack Developer</h2>
   <p>PHP • Laravel • CakePHP • Vue.js • React • MySQL • Redis</p>
   <a href="mailto:jayparmar271@gmail.com" class="btn">Contact Me</a>
+  <a href="Jay_Parmar_Resume.pdf" class="btn">Download Resume</a>
 </header>
 
 <section>
   <h3>About Me</h3>
   <p>
-    Senior Software Engineer based in Ahmedabad, India with 8+ years of experience 
-    building scalable web applications and backend systems. 
-    Specialized in PHP ecosystems, Vue.js, and modern API-driven architecture.
+    Senior Software Engineer with 8+ years of experience building scalable,
+    high-performance web applications. Specialized in backend systems,
+    API architecture, and modern frontend integration.
   </p>
   <br>
   <p>
-    Experienced in debugging production systems, implementing secure APIs, 
-    integrating Stripe, Xero, Google OAuth2, and building webhook-based architectures.
-    Passionate about clean code, mentoring juniors, and optimizing development workflows.
+    Strong expertise in CakePHP, Laravel, Vue.js, React, Redis caching,
+    third-party integrations (Stripe, Xero, Google OAuth2),
+    and production debugging. Passionate about clean architecture,
+    mentoring developers, and delivering reliable systems.
   </p>
 </section>
 
 <section>
   <h3>Technical Skills</h3>
   <div class="skills-grid">
+
     <div class="card">
       <h4>Backend</h4>
       <p>PHP, Laravel, CakePHP</p>
-      <p>REST APIs, JWT</p>
+      <p>REST APIs, JWT Authentication</p>
     </div>
 
     <div class="card">
@@ -157,14 +180,15 @@ footer {
     <div class="card">
       <h4>Database</h4>
       <p>MySQL, PostgreSQL</p>
-      <p>Redis</p>
+      <p>Redis Caching</p>
     </div>
 
     <div class="card">
-      <h4>Dev Tools</h4>
+      <h4>Tools & DevOps</h4>
       <p>Docker, Git, JIRA</p>
-      <p>Claude Code, Agile</p>
+      <p>Agile Methodology, Claude Code</p>
     </div>
+
   </div>
 </section>
 
@@ -174,30 +198,31 @@ footer {
 
     <div class="timeline-item">
       <h4>Senior Software Engineer – Eventrac (2023 – Present)</h4>
-      <p>UK-based sports event registration & management platform.</p>
       <ul>
-        <li>Built scalable event registration pipeline</li>
-        <li>Implemented webhook integrations</li>
-        <li>Debugged production issues & improved performance</li>
-        <li>Maintained Redis-based optimizations</li>
+        <li>Built scalable sports event registration system</li>
+        <li>Implemented webhook-based booking integrations</li>
+        <li>Debugged and optimized production systems</li>
+        <li>Designed reliable backend pipelines</li>
       </ul>
     </div>
 
     <div class="timeline-item">
       <h4>Senior Software Engineer – Proofed (2019 – 2023)</h4>
       <ul>
-        <li>Created custom file conversion plugin</li>
-        <li>Developed business APIs & JWT authentication</li>
-        <li>Stripe, Xero & Google OAuth integration</li>
-        <li>Managed deployments & client communication</li>
+        <li>Developed custom file conversion plugin</li>
+        <li>Built Business APIs using CakePHP</li>
+        <li>Integrated Stripe, Xero, Google OAuth2</li>
+        <li>Implemented JWT authentication</li>
+        <li>Managed deployments & performance optimization</li>
       </ul>
     </div>
 
     <div class="timeline-item">
       <h4>Proofed B2B – React / Next.js (2022 – 2023)</h4>
       <ul>
-        <li>Built order & job management modules</li>
-        <li>Developed scalable frontend architecture</li>
+        <li>Developed order & job management modules</li>
+        <li>Built scalable frontend architecture</li>
+        <li>Worked in Agile team environment</li>
       </ul>
     </div>
 
@@ -209,18 +234,30 @@ footer {
   <div class="projects-grid">
 
     <div class="card">
+      <h4>Proofed</h4>
+      <p>Large-scale global proofreading platform with secure API-driven architecture.</p>
+      <ul>
+        <li>Stripe & Xero integrations</li>
+        <li>Queue jobs & Redis optimization</li>
+        <li>JWT secured APIs</li>
+      </ul>
+      <p><strong>Tech:</strong> CakePHP, MySQL, Redis</p>
+    </div>
+
+    <div class="card">
       <h4>Eventrac</h4>
-      <p>Sports event registration, booking & marketing system with full lifecycle management.</p>
+      <p>UK-based sports event management platform handling booking lifecycle.</p>
+      <ul>
+        <li>Webhook integrations</li>
+        <li>High-traffic event handling</li>
+      </ul>
+      <p><strong>Tech:</strong> CakePHP, Vue.js, Redis</p>
     </div>
 
     <div class="card">
       <h4>Connect In</h4>
-      <p>Social media platform with posts, groups, likes, comments & media sharing.</p>
-    </div>
-
-    <div class="card">
-      <h4>WatfordTaxi</h4>
-      <p>Taxi booking platform with dynamic admin dashboard & configuration system.</p>
+      <p>Social media platform with posts, groups, likes, and media sharing.</p>
+      <p><strong>Tech:</strong> PHP, MySQL</p>
     </div>
 
   </div>
@@ -228,11 +265,11 @@ footer {
 
 <section class="contact">
   <h3>Contact</h3>
-  <p>Email: jayparmar271@gmail.com</p>
+  <p>Email: <a href="mailto:jayparmar271@gmail.com">jayparmar271@gmail.com</a></p>
   <p>Phone: +91 7405873827</p>
   <p>Location: Ahmedabad, India</p>
-  <p>GitHub: github.com/yourusername</p>
-  <p>LinkedIn: linkedin.com/in/yourusername</p>
+  <p>GitHub: <a href="https://github.com/JayParmar271" target="_blank">github.com/JayParmar271</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/jay-parmar-software-engineer" target="_blank">linkedin.com/in/jay-parmar-software-engineer</a></p>
 </section>
 
 <footer>
